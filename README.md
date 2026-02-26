@@ -3,13 +3,13 @@
 
 # Review Corpus Builder
 
-This repository provides workflow for building an integrated review corpus of datasets reviewed by Global Biotic Interactions. 
+This repository provides workflow for building an integrated review corpus of datasets reviewed by Global Biotic Interactions (GloBI, Poelen et al. 2014). 
 
-The examples below are applied to the collection of datasets mentioned in various meetings facilitated by [MicrobeNetNet](https://globalbioticinteractions.org/microbenetnet) and these results are documented in an accompanying data paper.   
+The examples below are applied to the collection of datasets mentioned in various meetings facilitated by [MicrobeNetNet](https://globalbioticinteractions.org/microbenetnet)(Sikes et al. 2024) and these results are documented in an accompanying data paper (Poelen et al. 2026). 
 
 ## Requirements
 
-[Elton](https://globalbioticinteractions.org/elton), [Preston](https://globalbioticinteractions.org/preston), [duckdb](https://duckdb.org), and a commandline running [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
+[Elton](https://globalbioticinteractions.org/elton), [Preston](https://globalbioticinteractions.org/preston) (Elliott et al. 2023), [duckdb](https://duckdb.org), and a commandline running [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
 ## Steps
 
@@ -185,6 +185,12 @@ WSP DwC-Archive | Darwin Core Archive for Charles Gardner Shaw Mycological Herba
 
 ## References
 
-https://globalbioticinteractions.org/microbenetnet
+Sikes, B.A., Zanne E.A., Classen, A.T, Kivlin S.N. (2024) MICROBENet-Net: Multi-Institute Collaborative Research on BElowground plant-microbial interactions Network of Networks. 2024/2028 [NSF AccelNet Award 2412561](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2412561) https://microbenetwork.net/ https://globalbioticinteractions.org/microbenetnet
+
+Jorrit H. Poelen, James D. Simons and Chris J. Mungall. (2014). Global Biotic Interactions: An open infrastructure to share and analyze species-interaction datasets. Ecological Informatics. https://doi.org/10.1016/j.ecoinf.2014.08.005.
+
+Elliott M.J., Poelen, J.H. & Fortes, J.A.B. (2023) Signing data citations enables data verification and citation persistence. Sci Data. https://doi.org/10.1038/s41597-023-02230-y hash://sha256/f849c870565f608899f183ca261365dce9c9f1c5441b1c779e0db49df9c2a19d
+
+
 
  
