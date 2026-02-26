@@ -5,7 +5,7 @@
 
 This repository provides workflow for building an integrated review corpus of datasets reviewed by Global Biotic Interactions (GloBI, Poelen et al. 2014). 
 
-The examples below are applied to the collection of datasets mentioned in various meetings facilitated by [MicrobeNetNet](https://globalbioticinteractions.org/microbenetnet)(Sikes et al. 2024) and these results are documented in an accompanying data paper (Poelen et al. 2026). 
+The examples below are applied to the collection of datasets mentioned in various meetings facilitated by [MicrobeNetNet](https://globalbioticinteractions.org/microbenetnet)(Sikes et al. 2024) and these results are documented in an accompanying data publication (Poelen 2026). 
 
 ## Requirements
 
@@ -191,6 +191,6 @@ Jorrit H. Poelen, James D. Simons and Chris J. Mungall. (2014). Global Biotic In
 
 Elliott M.J., Poelen, J.H. & Fortes, J.A.B. (2023) Signing data citations enables data verification and citation persistence. Sci Data. https://doi.org/10.1038/s41597-023-02230-y hash://sha256/f849c870565f608899f183ca261365dce9c9f1c5441b1c779e0db49df9c2a19d
 
-
+Poelen, J. H. (2026). MicrobeNetNet Dataset Review Corpus and Associated Data Products hash://md5/5981a37a16c25204dc18d9188f185b19 hash://sha256/7448991edd5f79db02519a5b3d4691c50a60c02f45d40f087402a7a492da3a3e [Data set]. Zenodo. https://doi.org/10.5281/zenodo.18793975
 
  
