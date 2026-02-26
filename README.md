@@ -4,7 +4,7 @@ This repository provides workflow for building a integrated corpus of MicrobeNet
 
 ## Requirements
 
-Elton, Preston
+[Elton](https://globalbioticinteractions.org/elton), [Preston](https://globalbioticinteractions.org/preston), [duckdb](https://duckdb.org), and a commandline running [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
 ## Steps
 
@@ -58,10 +58,10 @@ duckdb -c "COPY ( SELECT * FROM 'interactions.tsv' ) TO 'interactions.parquet';
 duckdb -c "SELECT COUNT(*) FROM 'interactions.parquet';"
 ```
 
-### Most Frequently Occurring Source Taxon Name
+### Top 10 Most Frequently Occurring Source Taxon Name
 
 ```bash
-duckdb -c "SELECT DISTINCT(sourceTaxonName), COUNT(*) as freq FROM 'interactions.parquet' GROUP BY sourceTaxonName ORDER BY freq DESC;"
+duckdb -c "SELECT DISTINCT(sourceTaxonName), COUNT(*) as freq FROM 'interactions.parquet' GROUP BY sourceTaxonName ORDER BY freq DESC LIMIT 10;"
 ```
 
 
