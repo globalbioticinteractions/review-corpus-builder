@@ -16,7 +16,7 @@ This repository provides workflow for building a integrated corpus of MicrobeNet
  | preston track --algo md5 
 ```
 
-2. stage datasets associated with discovered signatures. See related script [stage-datasets.sh](bin/stage-dataset.sh).
+2. stage datasets associated with discovered review signatures. See related script [stage-datasets.sh](bin/stage-dataset.sh). For MicrobeNetNet on 2026-02-26, this results in about 4.2 GiB of content in the ```data/``` folder.
 
 ```bash
 cat dataset-signatures.txt \
@@ -35,7 +35,7 @@ preston head --algo md5 \
   | tee dataset-staged.nq
 ```
 
-3. generate a tab-separated values file with a table of interactions extracted from staged datasets using [Elton](https://globalbioticinteractions.org/elton).
+3. generate a tab-separated values file with a table of interactions extracted from staged datasets using [Elton](https://globalbioticinteractions.org/elton). For MicrobeNetNet on 2026-02-26, this step took some hours and resulted in a file ```interactions.tsv``` with size ~6.7 GiB. 
  
 ```bash
 cat dataset-staged.nq \
@@ -43,7 +43,7 @@ cat dataset-staged.nq \
   | tee interactions.tsv
 ```
 
-4. convert the table to generate a file in parquet format to facilitate analysis using tools like [https://duckdb.org](https://duckdb.org) .
+4. convert the table to generate a file in parquet format to facilitate analysis using tools like [https://duckdb.org](https://duckdb.org) . For MicrobeNetNet on 2026-02-26, this steps some less than a minute and resulted in a file ```interactions.parquet``` with size less than 300 MiB. 
 
 ```bash
 duckdb -c "COPY ( SELECT * FROM 'interactions.tsv' ) TO 'interactions.parquet';
